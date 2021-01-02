@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/llOptions">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/attnheaderbg"></ImageView>
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_below="@+id/backGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:text="List of absent student"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attendantRecycler"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/submitAttend"
+        android:layout_below="@+id/attendantRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_48ssp"
+        android:layout_marginRight="@dimen/_48ssp"
+        android:gravity="center"
+        android:padding="@dimen/_8ssp"
+        android:textSize="20dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        app:buttonGradientStartColor="@color/teal_200"
+        app:buttonGradientEndColor="#1A8B8C"
+        app:buttonCornerRadius="@dimen/_25sdp"
+        />
+
+</RelativeLayout>
+</ScrollView>
